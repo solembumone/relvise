@@ -23,7 +23,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-}  
+}
 
 p {
 margin: 0;
@@ -87,6 +87,14 @@ img {
 }
 
 /*root*/
+:root {
+  --text-color: #252B42;
+  --second-text-color: #737373;
+  --light-text-color: #FFFFFF;
+  --primary-color: #FF7B47;
+  --secondary-color: #0D5C63;
+  --dark-background-color: #252B42;
+}
 
 /*globe*/
 
@@ -102,13 +110,20 @@ body {
   list-style: none;
 }
 
+.btn-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 197px;
 }
 
