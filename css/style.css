@@ -283,4 +283,63 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
+/*advantages*/
+
+.advantages {
+  background-color: var(--light-background-color);
+}
+
+.advantages__container {
+  padding-top: 211px;
+  padding-bottom: 80px;
+}
+
+.advantages__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.title {
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+}
+
+.advantages__cards {
+  gap: 30px;
+}
+
+.advantages__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 30px 30.5px;
+  width: calc((100% - 30px)/4);
+  background-color: #fff;
+}
+
+.advantages__card-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.advantages__figure {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+}
+
+.features__name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--second-text-color);
+}
+
 
