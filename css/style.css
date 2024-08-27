@@ -130,12 +130,10 @@ body {
   padding: 0 197px;
 }
 
-.section__title {
+.section__header {
   margin: 0 auto;
   max-width: 511px;
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 45px;
 }
 
 .title {
@@ -154,7 +152,6 @@ body {
   letter-spacing: var(--letter-spacing);
   color: var(--second-text-color);
 }
-
 
 .none {
   display: none;
@@ -311,10 +308,6 @@ body {
 
 /*advantages*/
 
-.advantages {
-
-}
-
 .advantages__container {
   padding-top: 211px;
   padding-bottom: 80px;
@@ -324,8 +317,6 @@ body {
   margin-bottom: 80px;
   text-align: center;
 }
-
-
 
 .advantages__cards {
   gap: 30px;
@@ -364,13 +355,14 @@ body {
 
 /*advice*/
 
-.advice {
-
-}
 
 .advice__container {
-  padding-top: 80px;
+  padding-top: 125px;
   padding-bottom: 80px ;
+}
+
+.advice__header {
+  padding-bottom: 45px;
 }
 
 
@@ -412,4 +404,94 @@ body {
 
 .advice__card-img {
   width: 100%;
+}
+
+/*about*/
+
+.about {
+  background-color: #fff;
+}
+
+.about__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about__header {
+  margin-bottom: 100px;
+}
+
+.about__title {
+  margin-bottom: 15px;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+}
+
+.about__content-video {
+  margin-right: auto;
+}
+
+.about__img {
+  width: 100%;
+}
+
+.about__content-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 333px;
+}
+
+.about__content-title {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+}
+
+.about__content-subtitle {
+  margin-bottom: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--second-text-color);
+}
+.about__content-list {
+  gap: 30px;
+}
+
+.about__content-item {
+  display: block;
+  padding-left: 52px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about__content-item-1 {
+  background-image:url(/img/about/settings-icon-1.png);
+}
+
+.about__content-item-2 {
+  background-image:url(/img/about/settings-icon-2.png);
+}
+
+.about__content-item__title {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+}
+.about__content-item__subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--second-text-color);
 }
