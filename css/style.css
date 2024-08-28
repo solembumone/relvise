@@ -299,6 +299,7 @@ body {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: var(--letter-spacing);
+  transition: color 0.2s ease-in-out;
 }
 
 .features__card:hover .features__subtitle {
@@ -495,3 +496,218 @@ body {
   letter-spacing: var(--letter-spacing);
   color: var(--second-text-color);
 }
+
+
+/*clients*/
+
+.clients {
+  position: relative;
+  padding-top: 50px;
+
+  background-color: var(--light-background-color);
+}
+
+.clients__bg {
+  width: 100%;
+  height: 77px;
+  background-color: var(--dark-background-color);
+  z-index: -1;
+}
+
+
+.clients__list {
+  margin-bottom: 137px;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients__item {
+  text-align: center;
+  width:calc((100% - 30px)/6);
+}
+
+.clients__form {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  padding: 30px 40px 30px 50px;
+  background-color: #17213C;
+}
+
+.lable {
+ display: inline-block;
+ margin-right: 180px;
+ max-width: 266px;
+ font-size: 24px;
+ font-weight: 700;
+ line-height: 32px;
+ color: var(--light-text-color);
+}
+
+.clients__input {
+  border:none ;
+  padding: 22px 0 22px 20px;
+  width: 333px;
+  border-radius: 5px 0 0 5px;
+}
+
+.clients__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.clients__button {
+  padding: 15px 22.5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  border: 1px solid var(--light-text-color);
+  border-radius: 0 5px 5px 0;
+}
+
+/*contacts*/
+
+.contacts {
+  padding-top: 80px;
+}
+
+.section__header  {
+  margin-bottom: 80px;
+}
+
+.contacts__title {
+  margin-bottom: 10px;
+}
+
+.contact__cards {
+  align-items: center;
+  width: 985px;
+  height: 393px;
+  margin-bottom: 80px;
+  gap: 5px;
+}
+
+.contact__card {
+  width: 327px;
+  height: 333px;
+  /* padding-top: 50px;
+  padding-bottom: 50px;  */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 5px)/3);
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, width 0.2s ease-in-out;
+}
+
+
+
+.contact__card:hover {
+  width: 329px;
+  height: 393px;
+  background-color: #252B42;
+  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, width 0.2s ease-in-out;
+
+}
+
+.contacts__card-icon svg path {
+  transition: fill 0.2s ease-in-out;
+}
+
+.contact__card:hover .contacts__card-icon svg path {
+  fill: var(--light-text-color);
+  transition: fill 0.2s ease-in-out;
+}
+
+.contacts__card-mail {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact__card:hover .contacts__card-mail {
+  color: var(--light-text-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.contacts__card-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+}
+
+.contact__card:hover .contacts__card-title {
+  color: var(--light-text-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.contacts__card-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.contact__card:hover .contacts__card-button {
+  color: var(--light-text-color);
+  border: 1px solid var(--light-text-color);
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+
+.consulting {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+.consulting__text {
+  margin-right: auto;
+}
+
+.consulting__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+}
+
+.consulting__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--second-text-color);
+}
+
+.consulting__button {
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--light-text-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+
