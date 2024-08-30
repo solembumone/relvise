@@ -162,7 +162,7 @@ body {
 /*header*/
 
 .header {
-  background-image: url(/img/hero/cover.png);
+  background-image: url(../img/hero/cover.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -242,26 +242,23 @@ body {
 }
 
 .header__button {
-  padding: 10px 36px;
+  width: 154px;
+  height: 48px;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: var(--letter-spacing);
+  border: 1px solid var(--secondary-color);
   border-radius: 37px;
+  transition: transform 0.3s ease;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.header__button-1 {
+.header__button:hover {
   color: var(--light-text-color);
   background-color: var(--primary-color);
-  transition: background-color 0.2s ease-in-out ;
+  border: none;
+  transform: scale(1.02);
 }
-
-.header__button-1:hover {
-  background-color: var(--button-hover);
-  transition: background-color 0.2s ease-in-out;
-}
-
-
 
 .header__button-2 {
   color: var(--secondary-color);
@@ -290,6 +287,7 @@ body {
   padding: 35px 50px 35px 40px;
   background-color: var(--light-text-color);
   width: calc((100% - 30px)/3);
+  transition: background-color 0.2s ease-in-out;
 }
 
 .features__card:hover {
@@ -303,6 +301,10 @@ body {
   height: 48px;
 }
 
+.features__card-icon svg path {
+  transition: fill 0.2s ease-in-out;
+}
+
 .features__card:hover .features__card-icon svg path {
   fill: var(--light-text-color);
   transition: fill 0.2s ease-in-out;
@@ -314,7 +316,9 @@ body {
   line-height: 32px;
   letter-spacing: var(--letter-spacing);
   color: var(--text-color);
+  transition: color 0.2s ease-in-out;
 }
+
 
 .features__card:hover .features__card-title {
   color: var(--light-text-color);
@@ -501,11 +505,11 @@ body {
 }
 
 .about__content-item-1 {
-  background-image:url(/img/about/settings-icon-1.png);
+  background-image:url(../img/about/settings-icon-1.png);
 }
 
 .about__content-item-2 {
-  background-image:url(/img/about/settings-icon-2.png);
+  background-image:url(../img/about/settings-icon-2.png);
 }
 
 .about__content-item__title {
@@ -541,7 +545,6 @@ body {
   z-index: -1;
 }
 
-
 .clients__list {
   margin-bottom: 137px;
   align-items: center;
@@ -576,18 +579,21 @@ body {
 
 .clients__input {
   border:none ;
-  padding: 22px 0 22px 20px;
+  padding-right: 20px;
+  height: 58px;
   width: 333px;
   border-radius: 5px 0 0 5px;
 }
 
 .clients__input::placeholder {
+  padding-left: 20px;
   font-size: 14px;
   font-weight: 400;
 }
 
 .clients__button {
-  padding: 15px 22.5px;
+  padding: 0 22.5px;
+  height: 58px;
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
@@ -623,32 +629,34 @@ body {
   width: 985px;
   height: 393px;
   margin-bottom: 80px;
-  gap: 5px;
+  /* gap: 5px; */
 }
 
 
 
 .contact__card {
-  width: 327px;
+  margin: 0 2px;
+  width: 33%;
   height: 333px;
-  /* padding-top: 50px;
-  padding-bottom: 50px;  */
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
   justify-content: center;
-  width: calc((100% - 5px)/3);
+  /* width: calc((100% - 5px)/3); */
   background-color: #fff;
-  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, width 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 
 .contact__card:hover {
-  width: 329px;
+  /* margin: 0;
+  width: 329px; */
   height: 393px;
+  transform: scale(1.02);
   background-color: #252B42;
-  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out, width 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, height 0.2s ease-in-out,transform 0.2s ease-in-out;
+  z-index: 1;
 }
 
 .contacts__card-icon svg path {
@@ -681,6 +689,7 @@ body {
   line-height: 24px;
   letter-spacing: var(--letter-spacing);
   color: var(--text-color);
+  transition: color 0.2s ease-in-out;
 }
 
 .contact__card:hover .contacts__card-title {
@@ -697,6 +706,7 @@ body {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: 5px;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .contact__card:hover .contacts__card-button {
